@@ -5,7 +5,6 @@ import './App.css';
 import asyncComponent from './utils/asyncComponent'
 // import Home from './pages/home'
 // import Events from './pages/events'
-import NavBar from './components/navbar'
 
 const HomeImport = () => import('./pages/home')
 const EventsImport = () => import('./pages/events')
@@ -19,7 +18,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <NavBar/>
 
         <div className="content">
           <Route exact path="/" component={Home}/>
